@@ -23,14 +23,37 @@
         padding: 20px;
         width: 30%;
         border: 1px solid black;
+        border-radius: 15px;
+        background-color: aqua;
         margin: 10px;
-        height: 400px;
+        height: 100px;
+        position: relative;
+        overflow: hidden;
         display: flex;
+        justify-content: flex-start;
+        align-items: center;
         flex-direction: column;
         .card-text{
            font-size: 2rem;
-           padding-bottom: 30px;
+           padding-bottom: 45px;       
         }
+        .cardChoice{
+            color: white;
+            background-color: orchid;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 15px;
+            position: absolute;
+            bottom: 2%;
+            
+            &:hover{
+                background-color: olivedrab;
+            }
+        }
+        .show{
+            height: 400px;
+        }
+        
     }
     
 

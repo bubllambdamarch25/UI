@@ -1,3 +1,5 @@
+@mobile ~(max-width: 500px);
+@tablet ~(max-width: 800px);
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -156,6 +158,9 @@ table {
   font-size: 1.6rem;
   padding: 20px;
 }
+.card {
+  background-color: aqua;
+}
 .top-container {
   background-color: aqua;
   height: 300px;
@@ -182,14 +187,35 @@ table {
   padding: 20px;
   width: 30%;
   border: 1px solid black;
+  border-radius: 15px;
+  background-color: aqua;
   margin: 10px;
-  height: 400px;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
   display: flex;
+  justify-content: flex-start;
+  align-items: center;
   flex-direction: column;
 }
 .container2 .card .card-text {
   font-size: 2rem;
-  padding-bottom: 30px;
+  padding-bottom: 45px;
+}
+.container2 .card .cardChoice {
+  color: white;
+  background-color: orchid;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 15px;
+  position: absolute;
+  bottom: 2%;
+}
+.container2 .card .cardChoice:hover {
+  background-color: olivedrab;
+}
+.container2 .card .show {
+  height: 400px;
 }
 .card-cars {
   display: flex;
@@ -199,6 +225,7 @@ table {
 }
 .card-cars .cars-probable {
   display: flex;
+  flex-wrap: wrap;
 }
 .card-cars .cars-probable .cars {
   padding: 20px;
@@ -210,6 +237,12 @@ table {
 }
 .card-cars .cars-probable .cars:hover {
   background-color: aqua;
+}
+@media (max-width: 800px) {
+  .card-cars .cars-probable .cars {
+    width: 100%;
+    text-align: center;
+  }
 }
 .card-cars .ab-card {
   display: none;
@@ -225,7 +258,30 @@ table {
   color: red;
   font-size: 2.6rem;
   text-align: center;
+  padding: 20px;
+}
+.card-cars .ab-card .t-ab-img {
+  margin: 0% 30% 2%;
+  height: 400px;
+  padding: 10px;
+}
+@media (max-width: 800px) {
+  .card-cars .ab-card .t-ab-img {
+    width: 100%;
+    height: 400px;
+  }
+}
+.card-cars .ab-card .s-ab-img {
+  margin: 0% 30% 2%;
+}
+@media (max-width: 800px) {
+  .card-cars .ab-card .s-ab-img {
+    width: 100%;
+    height: auto;
+  }
 }
 .card-cars .card-chosen {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
