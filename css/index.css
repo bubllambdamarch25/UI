@@ -176,11 +176,56 @@ table {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  justify-content: center;
 }
 .container2 .card {
   padding: 20px;
-  width: 33%;
+  width: 30%;
+  border: 1px solid black;
+  margin: 10px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
 }
 .container2 .card .card-text {
   font-size: 2rem;
+  padding-bottom: 30px;
+}
+.card-cars {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+.card-cars .cars-probable {
+  display: flex;
+}
+.card-cars .cars-probable .cars {
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid black;
+  border-radius: 15px;
+  color: white;
+  background-color: black;
+}
+.card-cars .cars-probable .cars:hover {
+  background-color: aqua;
+}
+.card-cars .ab-card {
+  display: none;
+  color: white;
+  background-color: orchid;
+  width: 60%;
+  font-size: 1.3rem;
+  border: 3px solid black;
+  border-radius: 20px;
+  padding: 10px;
+}
+.card-cars .ab-card .text {
+  color: red;
+  font-size: 2.6rem;
+  text-align: center;
+}
+.card-cars .card-chosen {
+  display: block;
 }
