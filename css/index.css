@@ -1,0 +1,375 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+.container {
+  width: 98%;
+  margin: 0 auto;
+  font-size: 10px sans-serif;
+}
+#nav-bar {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#nav-bar .logoimg {
+  width: 90px;
+  height: 72px;
+}
+#nav-bar .menu {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: orchid;
+}
+#nav-bar .menu a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.6rem;
+  padding: 20px;
+  border: 1px solid purple;
+  color: white;
+}
+.card {
+  background-color: aqua;
+}
+.top-container {
+  background-color: aqua;
+  height: 300px;
+  padding: 20px;
+}
+.top-container h1 {
+  color: #ffffff;
+  padding: 5px;
+  font-size: 3rem;
+}
+.top-container p {
+  color: white;
+  font-size: 1.3rem;
+  width: 45%;
+  padding: 5px;
+}
+@media (max-width: 750px) {
+  .top-container p {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .top-container p {
+    width: 100%;
+  }
+}
+.top-container .button {
+  padding: 10px;
+  width: 300px;
+  margin: 2.5%;
+  border-radius: 15px;
+  font-size: 2rem;
+}
+.top-container .button a {
+  color: white;
+  text-decoration: none;
+}
+@media (max-width: 750px) {
+  .top-container .button {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .top-container .button {
+    width: 100%;
+    text-align: center;
+  }
+}
+.top-container .sign-up {
+  background-color: #00f829;
+  border: 3px solid #032e05;
+}
+.top-container .log-in {
+  background-color: #f70eff;
+  border: 3px solid #490247;
+}
+@media (max-width: 750px) {
+  .top-container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .top-container #here {
+    width: 45%;
+  }
+  .top-container #there {
+    width: 45%;
+  }
+}
+.container2 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  background-color: orchid;
+}
+.container2 .card {
+  padding: 20px;
+  width: 30%;
+  border: 1px solid black;
+  border-radius: 15px;
+  background-color: aqua;
+  margin: 10px;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+.container2 .card .card-text {
+  font-size: 2rem;
+  padding-bottom: 45px;
+}
+.container2 .card .cardChoice {
+  color: white;
+  background-color: orchid;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 15px;
+  position: absolute;
+  cursor: pointer;
+  bottom: 2%;
+}
+.container2 .card .cardChoice:hover {
+  background-color: olivedrab;
+}
+@media (max-width: 800px) {
+  .container2 .card {
+    width: 45%;
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .container2 .card {
+    width: 100%;
+    text-align: center;
+  }
+}
+.container2 .coraline {
+  height: 400px;
+}
+.cardamin {
+  display: flex;
+  color: white;
+  justify-content: center;
+}
+.cardamin .cardinal {
+  padding: 20px;
+  border: 1px solid black;
+  margin: 10px;
+  border-radius: 15px;
+  font-size: 1.2rem;
+  background-color: aqua;
+}
+.cardamin .cardinal:hover {
+  background-color: white;
+  color: aqua;
+}
+.card-cars {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  background-color: aquamarine;
+}
+.card-cars .cars-probable {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card-cars .cars-probable .cars {
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid black;
+  border-radius: 15px;
+  color: white;
+  background-color: olivedrab;
+}
+.card-cars .cars-probable .cars:hover {
+  background-color: aqua;
+}
+@media (max-width: 800px) {
+  .card-cars .cars-probable .cars {
+    width: 100%;
+    text-align: center;
+  }
+}
+.card-cars .ab-card {
+  display: none;
+  color: white;
+  background-color: orchid;
+  width: 60%;
+  font-size: 1.3rem;
+  border: 3px solid black;
+  border-radius: 20px;
+  padding: 10px;
+}
+.card-cars .ab-card .text {
+  color: white;
+  font-size: 2.6rem;
+  text-align: center;
+  padding: 20px;
+}
+.card-cars .ab-card .t-ab-img {
+  margin: 0% 30% 2%;
+  height: 400px;
+  padding: 10px;
+}
+@media (max-width: 800px) {
+  .card-cars .ab-card .t-ab-img {
+    width: 100%;
+    height: 400px;
+  }
+}
+.card-cars .ab-card .s-ab-img {
+  margin: 0% 30% 2%;
+}
+@media (max-width: 800px) {
+  .card-cars .ab-card .s-ab-img {
+    width: 100%;
+    height: auto;
+  }
+}
+.card-cars .card-chosen {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}

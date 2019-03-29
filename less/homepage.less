@@ -1,0 +1,136 @@
+.top-container{
+    background-color: aqua;
+    height: 300px;
+    padding: 20px;
+    h1{
+        color:#ffffff;
+        padding: 5px;
+        font-size: 3rem;
+    }
+    p{
+        color: white;
+        font-size: 1.3rem;
+        width: 45%;
+        padding: 5px;
+        @media (max-width: 750px) {
+            width: 100%;
+        }
+        @media (max-width: 500px) {
+            width: 100%;
+        }
+    }
+    .button{
+        padding: 10px;
+        width: 300px;
+        margin: 2.5%;
+        border-radius: 15px;
+        font-size: 2rem;
+        
+        a{
+            color: white;
+            text-decoration: none;
+        }
+         @media (max-width: 750px) {
+            width: 100%;
+            text-align: center;
+        }
+        @media (max-width: 500px) {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+
+    .sign-up{
+        background-color: rgb(0, 248, 41);
+        border: 3px solid rgb(3, 46, 5);
+    }
+    .log-in{
+        background-color: rgb(247, 14, 255);
+        border: 3px solid rgb(73, 2, 71);   
+    }
+    @media (max-width: 750px) {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-evenly;
+        #here{
+            width: 45%;
+        }
+        #there{
+            width: 45%;
+        }
+    }
+    
+}
+.container2{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    background-color: orchid;
+    .card{
+        padding: 20px;
+        width: 30%;
+        border: 1px solid black;
+        border-radius: 15px;
+        background-color: aqua;
+        margin: 10px;
+        height: 100px;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        .card-text{
+           font-size: 2rem;
+           padding-bottom: 45px;       
+        }
+        .cardChoice{
+            color: white;
+            background-color: orchid;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 15px;
+            position: absolute;
+            cursor: pointer;
+            bottom: 2%;
+            
+            &:hover{
+                background-color: olivedrab;
+            }
+           
+        }
+        @media (max-width: 800px) {
+            width: 45%;
+            text-align: center;
+        }
+        @media (max-width: 500px) {
+            width: 100%;
+            text-align: center;
+        }
+        
+    }
+    .coraline{
+        height: 400px;
+    }
+    
+}
+.cardamin{
+    display: flex;
+    color: white;
+    justify-content: center;
+    .cardinal{
+        padding: 20px;
+        border: 1px solid black;
+        margin: 10px;
+        border-radius: 15px;
+        font-size: 1.2rem;
+        background-color: aqua;
+        &:hover{
+            background-color: white;
+            color: aqua;
+        }
+    }
+}
