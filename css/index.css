@@ -1,5 +1,3 @@
-@mobile ~(max-width: 500px);
-@tablet ~(max-width: 800px);
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -151,12 +149,15 @@ table {
   display: flex;
   align-items: center;
   width: 100%;
+  background-color: orchid;
 }
 #nav-bar .menu a {
   color: black;
   text-decoration: none;
   font-size: 1.6rem;
   padding: 20px;
+  border: 1px solid purple;
+  color: white;
 }
 .card {
   background-color: aqua;
@@ -177,11 +178,67 @@ table {
   width: 45%;
   padding: 5px;
 }
+@media (max-width: 750px) {
+  .top-container p {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .top-container p {
+    width: 100%;
+  }
+}
+.top-container .button {
+  padding: 10px;
+  width: 300px;
+  margin: 2.5%;
+  border-radius: 15px;
+  font-size: 2rem;
+}
+.top-container .button a {
+  color: white;
+  text-decoration: none;
+}
+@media (max-width: 750px) {
+  .top-container .button {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .top-container .button {
+    width: 100%;
+    text-align: center;
+  }
+}
+.top-container .sign-up {
+  background-color: #00f829;
+  border: 3px solid #032e05;
+}
+.top-container .log-in {
+  background-color: #f70eff;
+  border: 3px solid #490247;
+}
+@media (max-width: 750px) {
+  .top-container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .top-container #here {
+    width: 45%;
+  }
+  .top-container #there {
+    width: 45%;
+  }
+}
 .container2 {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   justify-content: center;
+  background-color: orchid;
 }
 .container2 .card {
   padding: 20px;
@@ -209,19 +266,50 @@ table {
   border: 1px solid black;
   border-radius: 15px;
   position: absolute;
+  cursor: pointer;
   bottom: 2%;
 }
 .container2 .card .cardChoice:hover {
   background-color: olivedrab;
 }
-.container2 .card .show {
+@media (max-width: 800px) {
+  .container2 .card {
+    width: 45%;
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .container2 .card {
+    width: 100%;
+    text-align: center;
+  }
+}
+.container2 .coraline {
   height: 400px;
+}
+.cardamin {
+  display: flex;
+  color: white;
+  justify-content: center;
+}
+.cardamin .cardinal {
+  padding: 20px;
+  border: 1px solid black;
+  margin: 10px;
+  border-radius: 15px;
+  font-size: 1.2rem;
+  background-color: aqua;
+}
+.cardamin .cardinal:hover {
+  background-color: white;
+  color: aqua;
 }
 .card-cars {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   justify-content: center;
+  background-color: aquamarine;
 }
 .card-cars .cars-probable {
   display: flex;
@@ -233,7 +321,7 @@ table {
   border: 1px solid black;
   border-radius: 15px;
   color: white;
-  background-color: black;
+  background-color: olivedrab;
 }
 .card-cars .cars-probable .cars:hover {
   background-color: aqua;
@@ -255,7 +343,7 @@ table {
   padding: 10px;
 }
 .card-cars .ab-card .text {
-  color: red;
+  color: white;
   font-size: 2.6rem;
   text-align: center;
   padding: 20px;
